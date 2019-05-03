@@ -8,6 +8,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:devices="using:VanArsdel.Devices"
+    xmlns:winui="using:Microsoft.UI.Xaml.Controls"
     xmlns:local="using:VanArsdel"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:shared="using:VanArsdel"
@@ -221,17 +222,19 @@
             HorizontalAlignment="Left"
             VerticalAlignment="Bottom"
             RequestedTheme="Light">
-            <RadioButton
-                x:Name="DayRadioButton"
-                x:Uid="DayRadioButton"
-                Checked="DayRadioButton_Checked"
-                IsChecked="True"
-                TabIndex="2" />
-            <RadioButton
-                x:Name="NightRadioButton"
-                x:Uid="NightRadioButton"
-                Checked="NightRadioButton_Checked"
-                TabIndex="3" />
+            <winui:RadioButtons x:Name="RadioButtonGroup">
+                <RadioButton
+                    x:Name="DayRadioButton"
+                    x:Uid="DayRadioButton"
+                    Checked="DayRadioButton_Checked"
+                    IsChecked="True"
+                    TabIndex="2" />
+                <RadioButton
+                    x:Name="NightRadioButton"
+                    x:Uid="NightRadioButton"
+                    Checked="NightRadioButton_Checked"
+                    TabIndex="3" />
+            </winui:RadioButtons>
         </StackPanel>
 
         <Grid

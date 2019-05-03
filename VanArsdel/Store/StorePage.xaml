@@ -162,9 +162,12 @@
                         <winui:TeachingTip x:Name="StoreCustomizeTip"
                             Target="{x:Bind CustomizeButton}"
                             Title="Start building your own creations here!"
-                            IsLightDismissEnabled="True"
                             Loaded="StoreCustomizeTip_Loaded"
-                            Closing="StoreCustomizeTip_Closing">
+                            Closing="StoreCustomizeTip_Closing"
+                            PreferredPlacement="RightBottom">
+                            <winui:TeachingTip.HeroContent>
+                                <Image Source="/Assets/Store/TeachingTiLampsHeader.jpg" AutomationProperties.Name="Lamps" />
+                            </winui:TeachingTip.HeroContent>
                         </winui:TeachingTip>
                         <!-- <winui:TeachingTip 
                             x:Name="EngraveTextTip"

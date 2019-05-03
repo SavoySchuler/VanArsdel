@@ -7,14 +7,19 @@ using Windows.Media.Core;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Navigation;
+using Microsoft.UI.Xaml.Controls;
 
 namespace VanArsdel
 {
     public sealed partial class StorePage : Page
     {
+
+        public static TeachingTip CustomizeTip;
+
         public StorePage()
         {
             this.InitializeComponent();
+            CustomizeTip = StoreCustomizeTip;
         }
 
         protected override void OnNavigatedTo(NavigationEventArgs e)

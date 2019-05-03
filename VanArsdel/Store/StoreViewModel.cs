@@ -32,6 +32,7 @@ namespace VanArsdel
 
         public void OnCustomizeClick(object sender, RoutedEventArgs e)
         {
+            StorePage.CustomizeTip.IsOpen = false;
             _overlayProvider.ShowCategorySelector();
         }
 
