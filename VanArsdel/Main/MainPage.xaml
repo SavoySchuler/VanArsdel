@@ -222,19 +222,17 @@
             HorizontalAlignment="Left"
             VerticalAlignment="Bottom"
             RequestedTheme="Light">
-            <winui:RadioButtons x:Name="RadioButtonGroup">
-                <RadioButton
+            <RadioButton
                     x:Name="DayRadioButton"
                     x:Uid="DayRadioButton"
                     Checked="DayRadioButton_Checked"
                     IsChecked="True"
                     TabIndex="2" />
-                <RadioButton
+            <RadioButton
                     x:Name="NightRadioButton"
                     x:Uid="NightRadioButton"
                     Checked="NightRadioButton_Checked"
                     TabIndex="3" />
-            </winui:RadioButtons>
         </StackPanel>
 
         <Grid
